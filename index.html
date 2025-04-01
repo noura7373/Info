@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Up im Trend</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header style="display: flex; justify-content: center; align-items: center; position: relative; background-color: pink;">
+        <h1>Make Up im Trend</h1>
+        <div class="cart" style="position: absolute; right: 20px;">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#services">Leistungen</a></li>
+            <li><a href="#contact">Kontakt</a></li><li>
+                <a href="Startseite.index.html">Start Seite</a></li>
+        </ul>
+    </nav>
+
+    <section class="products">
+        <div class="product">
+            <img src="https://media.douglas.de/medias/p1S2zz1216313-0-global.jpg?context=bWFzdGVyfGltYWdlc3wxNDI5MTZ8aW1hZ2UvanBlZ3xhR1ZtTDJoaU5TODJNemt3TkRZeU1qRXhOamc1TkM5d01WTXllbm94TWpFMk16RXpYekJmWjJ4dlltRnNMbXB3Wnd8MzYxMTFlNWE5NTIwMDNiZDM5NTE0ZDUyZTQyNGQxYTg2ZDIyYTAxMTkyZTRiOWM3YmQxMzI0OWJlY2UwY2NmZQ&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775" alt="Easy Bake Loose Baking & Setting Powder">
+            <h2>Easy Bake Loose Baking & Setting Powder</h2>
+            <p>Preis: 39,99€</p>
+            <button onclick="addToCart('Easy Bake Loose Baking & Setting Powder', 39,99)">In den Warenkorb</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.douglas.de/medias/gdbDLc1197440-0-dgl-DE.jpg?context=bWFzdGVyfGltYWdlc3w5NjcwOHxpbWFnZS9qcGVnfGFEUTVMMmcyTXk4MU1EYzRPVE16TVRNd05EUTNPQzluWkdKRVRHTXhNVGszTkRRd1h6QmZaR2RzTFVSRkxtcHdad3w4Y2U2ZGFlNzNjYzQyYjBlODliYjI4M2UwODZiMTdkMmI0M2I2ZTI2MWRhY2EwYjg0OTE2YzI0MGUyMTM5MTA1&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775" alt="Airbrush Flawless Setting Spray">
+            <h2>Airbrush Flawless Setting Spray</h2>
+            <p>Preis: 38,00€</p>
+            <button onclick="addToCart('Airbrush Flawless Setting Spray', 12)">In den Warenkorb</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.douglas.de/medias/VNqkwK375762-0-dgl-DE.jpg?context=bWFzdGVyfGltYWdlc3w2ODkzOXxpbWFnZS9qcGVnfGFEY3hMMmcxTVM4eE1qa3dOekUyT0RVMk16SXpNQzlXVG5GcmQwc3pOelUzTmpKZk1GOWtaMnd0UkVVdWFuQm58ZjM2ZjMyNzA3OTNmM2JkNzc3ZTY0OTMyMmQxNmQ0ZWM4NGQ5MGU4YWFlMmQ5ZWYwYTM2NWFhMmZjNWFiODBlMg&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775" alt="Hollywood Flawless Filter">
+            <h2>Hollywood Flawless Filter</h2>
+            <p>Preis: 52,00€</p>
+            <button onclick="addToCart('Hollywood Flawless Filter', 12)">In den Warenkorb</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.douglas.de/medias/VNqkwK375762-0-dgl-DE.jpg?context=bWFzdGVyfGltYWdlc3w2ODkzOXxpbWFnZS9qcGVnfGFEY3hMMmcxTVM4eE1qa3dOekUyT0RVMk16SXpNQzlXVG5GcmQwc3pOelUzTmpKZk1GOWtaMnd0UkVVdWFuQm58ZjM2ZjMyNzA3OTNmM2JkNzc3ZTY0OTMyMmQxNmQ0ZWM4NGQ5MGU4YWFlMmQ5ZWYwYTM2NWFhMmZjNWFiODBlMg&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775" alt="Hollywood Flawless Filter">
+            <h2>Hollywood Flawless Filter</h2>
+            <p>Preis: 52,00€</p>
+            <button onclick="addToCart('Hollywood Flawless Filter', 12)">In den Warenkorb</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.douglas.de/medias/hML879267831-0-global.jpg?context=bWFzdGVyfGltYWdlc3wxMDA4MDJ8aW1hZ2UvanBlZ3xhRGRsTDJneFppODJNell3TkRRek9EUXdNVEExTkM5b1RVdzROemt5TmpjNE16RmZNRjluYkc5aVlXd3VhbkJufDczMzA5ZTg4MTgwOGZlMzQwNDVkNWU5MWNmMDQ0ODdmODk5YTVhZDdlOGFhM2E3YzFjOWRjOGJjMDlkOWEyMzc&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775" alt="Everyday Essentials Set">
+            <h2>Everyday Essentials Set</h2>
+            <p>Preis: 24,59€</p>
+            <button onclick="addToCart('Everyday Essentials Set', 12)">In den Warenkorb</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.douglas.de/medias/LD4p4M1140723-0-global.jpg?context=bWFzdGVyfGltYWdlc3w1NTYyOXxpbWFnZS9qcGVnfGFETXhMMmd5TWk4Mk16YzJNemt4TURVNU1EUTVOQzlNUkRSd05FMHhNVFF3TnpJelh6QmZaMnh2WW1Gc0xtcHdad3wxM2U3N2IyODY2NzZjMzk0ZmQyMjI5NTdjMjI3MzhkMDJhODFhZTA5ZDY4OThmZDgwMzJjNjQyMzA5OWY4N2Uw&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775" alt="MascaraLash Sensational Sky High ">
+            <h2>MascaraLash Sensational Sky High</h2>
+            <p>Preis: 12,99€</p>
+            <button onclick="addToCart('MascaraLash Sensational Sky High', 12)">In den Warenkorb</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.douglas.de/medias/xd0xKD253055-0-dgl-DE.png?context=bWFzdGVyfGltYWdlc3wzODAwNjl8aW1hZ2UvcG5nfGFERmxMMmcwTnk4Mk5ESXhNREF3T0RrNU56a3hPQzk0WkRCNFMwUXlOVE13TlRWZk1GOWtaMnd0UkVVdWNHNW58NTg5YjE3YjE3NWQxODQzOWU5ZGNmZjgyNTNiZjhjZGZlODIzZTlhYmEzNWI3MzYwMTUyZTdjZDVmNjNkMWY1OA&grid=true&transparent=true&imPolicy=grayScaledtransparent&imdensity=1&imwidth=775" alt="Top Deals Creamy Eye Treatment with Avocado">
+            <h2>Top Deals Creamy Eye Treatment with Avocado</h2>
+            <p>Preis: 23,99€</p>
+            <button onclick="addToCart('Top Deals Creamy Eye Treatment with Avocado', 12)">In den Warenkorb</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.douglas.de/medias/NCIrdt1069179-0-global.jpg?context=bWFzdGVyfGltYWdlc3w5NTg2OXxpbWFnZS9qcGVnfGFEUmpMMmhoWVM4Mk16Y3hNelV5TWpZM09UZ3pPQzlPUTBseVpIUXhNRFk1TVRjNVh6QmZaMnh2WW1Gc0xtcHdad3w5MGVkYjZhN2Y2YWMyZjE5NGU4NzFiNGViYzZiOTE2ZWE1MTZhMzM5NTBmYTEzMDFjODI1MDAyMWQ2NzEzYTcw&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775" alt="Dior Addict Lip Maximizer Aufpolsternder Lipgloss – Feuchtigkeitspflege und Volumeneffekt – Sofort und langanhaltend">
+            <h2>Dior Addict Lip Maximizer Aufpolsternder Lipgloss – Feuchtigkeitspflege und Volumeneffekt – Sofort und langanhaltend</h2>
+            <p>Preis: 12€</p>
+            <button onclick="addToCart('Dior Addict Lip Maximizer Aufpolsternder Lipgloss – Feuchtigkeitspflege und Volumeneffekt – Sofort und langanhaltend', 12)">In den Warenkorb</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.douglas.de/medias/4hZhMq1155269-0-global.jpg?context=bWFzdGVyfGltYWdlc3w0ODI2NTl8aW1hZ2UvanBlZ3xhRFV6TDJnd055ODJNemc1TWpNMU1ESXpPRGMxTUM4MGFGcG9UWEV4TVRVMU1qWTVYekJmWjJ4dlltRnNMbXB3Wnd8NjFiMGYyYzMyZDRjZjI5MzAyOGY1YjAzZGI0YmNlZmNjNjY0MjVmNTVlNDFjN2U4OWJiOTE0NTk4YjgyNTUxNA&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775" alt="Dior Backstage Glow Face Palette">
+            <h2>Dior Backstage Glow Face Palette</h2>
+            <p>Preis: 56.00€</p>
+            <button onclick="addToCart('Dior Backstage Glow Face Palette', 56.00)">In den Warenkorb</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.douglas.de/medias/zvurrN1095905-0-global.jpg?context=bWFzdGVyfGltYWdlc3wzNDkxMjR8aW1hZ2UvanBlZ3xhR05qTDJneU1pODJNemMyTkRZMk9EQTRPRE0xTUM5NmRuVnljazR4TURrMU9UQTFYekJmWjJ4dlltRnNMbXB3Wnd8OTZjZmI0ZTMxZTJlOTNmMmI2ZjkyYzJjZjc1MGY5OGUzNTJjZmM0NGNhY2EwNGJhZDMwNDczY2E0ZDZkNjdmZg&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775" alt="Dior Backstage Rosy Glow Rouge für natürliche Leuchtkraft – Finish mit Glow">
+            <h2>Dior Backstage Rosy Glow Rouge für natürliche Leuchtkraft – Finish mit Glow</h2>
+            <p>Preis: 46,00€</p>
+            <button onclick="addToCart('Dior Backstage Rosy Glow Rouge für natürliche Leuchtkraft – Finish mit Glow', 46,00)">In den Warenkorb</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.douglas.de/medias/ViOlMO1217557-0-dgl-DE.jpg?context=bWFzdGVyfGltYWdlc3wxMDMzMzF8aW1hZ2UvanBlZ3xhR1F5TDJneU1TODJNamN4TlRRMk9EYzBNalk0Tmk5V2FVOXNUVTh4TWpFM05UVTNYekJmWkdkc0xVUkZMbXB3Wnd8MjE2ZmI3MDk2YjJjZDY2ZGIxYTU5YzdjMDQ0NWNlM2E3OTZiOWM1NzAyOTliZjY4NjVjOGQ2MDRmY2Q4OTRkOA&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775" alt="Make Me Blush Bold Blurring">
+            <h2>Make Me Blush Bold Blurring</h2>
+            <p>Preis: 49,00€</p>
+            <button onclick="addToCart('Make Me Blush Bold Blurring', 49,00)">In den Warenkorb</button>
+        </div>
+
+        <div class="product">
+            <img src="https://media.douglas.de/medias/DIIQjO1194415-0-global.jpg?context=bWFzdGVyfGltYWdlc3w2NTI2M3xpbWFnZS9qcGVnfGFHRmhMMmd3TXk4Mk16Y3pORE13TXpReU5EVTBNaTlFU1VsUmFrOHhNVGswTkRFMVh6QmZaMnh2WW1Gc0xtcHdad3w2MTAzMjNlMDQxNThjNDhmZTFmMzQwOGYzMDY0M2U0MWRmZGZhOTc4YTRmNTAzOGIyNmQzOTBkM2Y3YjMwMjNj&grid=true&imPolicy=grayScaled&imdensity=1&imwidth=775" alt="Easy Blur Natural Airbrush">
+            <h2>Easy Blur Natural Airbrush</h2>
+            <p>Preis: 12€</p>
+            <button onclick="addToCart('Easy Blur Natural Airbrush', 12)">In den Warenkorb</button>
+        </div>
+
+
+    <section class="cart-section">
+        <h2>Warenkorb</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Gesamtpreis:</strong> <span id="total-price">0</span>€</p>
+    </section>
+</body>
+</html>
